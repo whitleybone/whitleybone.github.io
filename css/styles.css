@@ -161,9 +161,9 @@ ul {
     width: 705px;
     margin: 30px auto 10px;
   }
-  .dot {
-    
-    margin-top: 10px;
+  .dot-container {
+    margin: 10px 10px;
+    text-align: center;
   }
 
 .slideshow-container {
