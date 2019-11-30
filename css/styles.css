@@ -143,16 +143,38 @@ ul {
 /* =========================
   SLIDESHOW STYLING
   =========================== */
+  .flex-content {
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .flex-content h2 {
+    margin-left: 10px;
+  }
+  .slideshow-container {
+    margin: 10px auto;
+    position: relative;
+  }
+  .text {
+    width: 705px;
+    margin: 30px auto 10px;
+  }
+  .dot {
+    
+    margin-top: 10px;
+  }
+
 .slideshow-container {
 display:flex;
 flex-direction: column;
   max-width: 700px;
-  
-  
+ 
 }
 
 #portfolio h2 {
-  padding-top: 10em;
+  padding-top: 2em;
   display: inline;
 }
 
@@ -519,3 +541,5 @@ footer, #contact {
       width: 30%;
       padding: 1.4%;
     }
+
+  }
