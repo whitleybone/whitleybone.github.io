@@ -14,8 +14,7 @@ window.addEventListener("load",function() {
     //UNCOMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
     // slideshowContainer = document.getElementsByClassName('slideshow-container')[0];
   
-    slideshowContainer.addEventListener('mouseenter', pause)
-    slideshowContainer.addEventListener('mouseleave', resume)
+    
 })
 
 // NEXT AND PREVIOUS CONTROL
@@ -25,6 +24,7 @@ function plusSlides(n){
     showSlides(slideIndex -= 1);
   } else {
    showSlides(slideIndex += 1); 
+   console.log(slideIndex);
   }
   
   //COMMENT OUT THE LINES BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
@@ -32,7 +32,7 @@ function plusSlides(n){
   if (n === -1){
     myTimer = setInterval(function(){plusSlides(n + 2)}, 4000);
   } else {
-    myTismer = setInterval(function(){plusSlides(n + 1)}, 4000);
+    myTimer = setInterval(function(){plusSlides(n + 1)}, 4000);
   }
 }
 
